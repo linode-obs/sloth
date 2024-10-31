@@ -38,6 +38,9 @@ type PrometheusServiceLevelSpec struct {
 	// and alerting rules generated for the service SLOs.
 	Labels map[string]string `json:"labels,omitempty"`
 
+	// InfoLabels are labels appended to the `sloth_slo_info` metric
+	InfoLabels map[string]string `json:infoLabels,omitempty`
+
 	// +kubebuilder:validation:MinItems=1
 	//
 	// SLOs are the SLOs of the service.
