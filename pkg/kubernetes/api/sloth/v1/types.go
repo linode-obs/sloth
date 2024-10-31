@@ -69,6 +69,7 @@ type SLO struct {
 	Labels map[string]string `json:"labels,omitempty"`
 
 	// Info labels added to the `sloth_slo_info` metric
+	// +optional
 	InfoLabels map[string]string `json:"infoLabels,omitempty"`
 
 	// +kubebuilder:validation:Required
