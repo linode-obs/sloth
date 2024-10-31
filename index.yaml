@@ -2,6 +2,17 @@ apiVersion: v1
 entries:
   sloth:
   - apiVersion: v2
+    created: "2024-10-31T22:01:14.252202202Z"
+    description: Base chart for Sloth.
+    digest: b7602b8811237de2d80e29edc17ab6b9c5c85380b64a872dad5b64909a020f09
+    home: https://github.com/linode-obs/sloth
+    kubeVersion: '>= 1.19.0-0'
+    name: sloth
+    type: application
+    urls:
+    - https://github.com/linode-obs/sloth/releases/download/sloth-helm-chart-0.8.2/sloth-0.8.2.tgz
+    version: 0.8.2
+  - apiVersion: v2
     created: "2024-10-31T20:05:22.892218438Z"
     description: Base chart for Sloth.
     digest: a7c5f2ef13412cc148cc400f935ee53cbfafe82fc7237a4b7fd47229ca0a30a5
@@ -177,4 +188,4 @@ entries:
     urls:
     - https://github.com/slok/sloth/releases/download/sloth-0.3.0/sloth-0.3.0.tgz
     version: 0.3.0
-generated: "2024-10-31T20:05:22.89237995Z"
+generated: "2024-10-31T22:01:14.252360259Z"
