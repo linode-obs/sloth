@@ -94,16 +94,20 @@ func mapSpecToModel(ctx context.Context, defaultWindowPeriod time.Duration, plug
 	spec := kspec.Spec
 	for _, specSLO := range kspec.Spec.SLOs {
 		slo := prometheus.SLO{
-			ID:              fmt.Sprintf("%s-%s", spec.Service, specSLO.Name),
-			Name:            specSLO.Name,
-			Description:     specSLO.Description,
-			Service:         spec.Service,
-			TimeWindow:      defaultWindowPeriod,
-			Objective:       specSLO.Objective,
-			Labels:          mergeLabels(spec.Labels, specSLO.Labels),
-			InfoLabels:      specSLO.InfoLabels,
-			PageAlertMeta:   prometheus.AlertMeta{Disable: true},
-			TicketAlertMeta: prometheus.AlertMeta{Disable: true},
+			ID:                    fmt.Sprintf("%s-%s", spec.Service, specSLO.Name),
+			RuleGroupInterval:     specSLO.Interval.RuleGroupInterval,
+			SLIErrorRulesInterval: specSLO.Interval.SLIErrorRulesInterval,
+			MetadataRulesInterval: specSLO.Interval.MetadataRulesInterval,
+			AlertRulesInterval:    specSLO.Interval.AlertRulesInterval,
+			Name:                  specSLO.Name,
+			Description:           specSLO.Description,
+			Service:               spec.Service,
+			TimeWindow:            defaultWindowPeriod,
+			Objective:             specSLO.Objective,
+			Labels:                mergeLabels(spec.Labels, specSLO.Labels),
+			InfoLabels:            specSLO.InfoLabels,
+			PageAlertMeta:         prometheus.AlertMeta{Disable: true},
+			TicketAlertMeta:       prometheus.AlertMeta{Disable: true},
 		}
 
 		// Set SLIs.
