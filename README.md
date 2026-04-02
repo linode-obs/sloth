@@ -1,3 +1,7 @@
+# THIS FORK IS ARCHIVED IN FAVOR OF [UPSTREAM SLOTH](https://github.com/slok/sloth)
+
+This repo has no features that [slok/sloth](https://github.com/slok/sloth) does not have, please use that instead.
+
 <p align="center">
     <img src="docs/img/logo.png" width="15%" align="center" alt="sloth">
 </p>
