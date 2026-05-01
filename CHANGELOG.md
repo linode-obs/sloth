@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [v0.13.2] - 2024-10-31
+
+- Set infoLabels to optional
+- Ran `make gen`
+
 ## [v0.13.1] - 2024-10-31
 
 - Update Mockery from 2.14.0 to 2.46.3
@@ -188,7 +193,9 @@
 - Support raw query based SLI.
 - Kubernetes (prometheus-operator) CRD generation support.
 
-[unreleased]: https://github.com/linode-obs/sloth/compare/v0.13.0...HEAD
+[unreleased]: https://github.com/linode-obs/sloth/compare/v0.13.2...HEAD
+[v0.13.2]: https://github.com/slok/sloth/compare/v0.13.1...v0.13.2
+[v0.13.1]: https://github.com/slok/sloth/compare/v0.13.0...v0.13.1
 [v0.13.0]: https://github.com/slok/sloth/compare/v0.12.0...v0.13.0
 [v0.12.0]: https://github.com/slok/sloth/compare/v0.11.0...v0.12.0
 [v0.11.0]: https://github.com/slok/sloth/compare/v0.10.0...v0.11.0
